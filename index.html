@@ -15,18 +15,31 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Weather App</title>
   </head>
   <body>
     <nav>
       <h1>Weather <i class="fas fa-temperature-low"></i></h1>
     </nav>
     <main>
+      <div class="date">
+        <p>Today's date is:</p>
+        <div class="todayDate"></div>
+      </div>
       <button>Check The Weather</button>
       <h2 id="city"></h2>
       <img src="" />
       <p id="sky"></p>
-      <h3 id="temp"></h3>
+      <div class="tempGroup">
+        <div class="tempNow">
+          <p>Temperature now:</p>
+          <h3 id="temp"></h3>
+        </div>
+        <!-- <div class="minMaxTemp">
+          <p>Temperature now:</p>
+          <h3 id="minMaxTemp"></h3>
+        </div> -->
+      </div>
     </main>
 
     <script src="main.js"></script>

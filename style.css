@@ -17,6 +17,7 @@ body {
   background-color: var(--light-clr);
   min-height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 
 main {
@@ -28,13 +29,15 @@ main {
 }
 
 nav {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 h1 {
   text-align: center;
   margin-top: 1rem;
   padding: 5px 10px;
+  color: var(--main-clr);
+  font-size: 2rem;
 }
 
 button {
@@ -47,4 +50,27 @@ button {
   border-radius: 3px;
   cursor: pointer;
   max-width: 60%;
+}
+
+.date {
+  text-align: center;
+}
+
+.date p,
+.tempGroup p,
+.tempNow,
+.minMaxTemp p {
+  margin-bottom: 1rem;
+}
+
+.todayDate {
+  font-size: 1.5rem;
+}
+
+.tempGroup {
+  text-align: center;
+}
+
+#sky {
+  font-weight: 500;
 }
