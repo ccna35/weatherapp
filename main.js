@@ -14,10 +14,9 @@ btn.addEventListener("click", () => {
         `${API_URL}lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${API_Key}&units=metric`
       );
       const data = await response.json();
-      // console.log(data.weather[0].description);
-      console.log(data);
+      // console.log(data);
 
-      // sky.innerHTML = data.weather[0].description;
+      sky.innerHTML = data.weather[0].description.toUpperCase();
       temp.innerHTML = `${Math.floor(data.main.temp)} °C`;
       city.innerHTML = data.name;
 
